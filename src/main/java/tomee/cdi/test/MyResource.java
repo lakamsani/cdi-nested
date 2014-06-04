@@ -1,6 +1,5 @@
 package tomee.cdi.test;
 
-import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -12,7 +11,6 @@ import tomee.cdi.service.MyService;
 /** 
  */
 
-@Stateless
 @Path("/testing")
 public class MyResource {
 
