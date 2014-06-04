@@ -17,12 +17,14 @@ public class MyResource {
    
    @Inject MyService service;
 
+   // test with: curl http://localhost:8080/cdi-nested/testing/hello
    @Path("/hello")
    @GET
    @Produces("text/plain")
    public String getIt()
    {
       System.out.println(getClass().getName() + " entered");
+      service.hello();
       return "got it";
    }
 
